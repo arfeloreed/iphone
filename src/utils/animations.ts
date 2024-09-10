@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 export const animateWithGsap = (
   target: string,
   animationProps: object,
-  scrollProps: object,
+  scrollProps?: object,
 ) => {
   gsap.to(target, {
     ...animationProps,

@@ -5,13 +5,15 @@ import reactRefresh from "eslint-plugin-react-refresh";
 import tseslint from "typescript-eslint";
 import eslintConfigPrettier from "eslint-config-prettier";
 import tailwind from "eslint-plugin-tailwindcss";
+import react from "eslint-plugin-react";
 
 export default tseslint.config(
   { ignores: ["dist"] },
   {
+    settings: { react: { version: "18.3" } },
     extends: [
       js.configs.recommended,
-      ...tseslint.configs.recommended,
+      tseslint.configs.recommendedTypeChecked,
       eslintConfigPrettier,
       ...tailwind.configs["flat/recommended"],
     ],
@@ -19,10 +21,15 @@ export default tseslint.config(
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
+      parserOptions: {
+        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
+        tsconfigRootDir: import.meta.dirname,
+      },
     },
     plugins: {
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
+      react,
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
@@ -30,6 +37,8 @@ export default tseslint.config(
         "warn",
         { allowConstantExport: true },
       ],
+      ...react.configs.recommended.rules,
+      ...react.configs["jsx-runtime"].rules,
     },
   },
 );
