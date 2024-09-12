@@ -87,7 +87,7 @@ const Model = () => {
                 right: 0,
                 overflow: "hidden",
               }}
-              eventSource={document.getElementById("root")}
+              eventSource={document.getElementById("root") || undefined}
             >
               <View.Port />
             </Canvas>
