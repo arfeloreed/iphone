@@ -86,7 +86,7 @@ const Features = () => {
               <div className="feature-text-container">
                 <div className="flex-center flex-1">
                   <p className="feature-text g_text">
-                    iPhone 16 Pro is{" "}
+                    iPhone 15 Pro is{" "}
                     <span className="text-white">
                       the first iPhone to feature an aerospace-grade titanium
                       design
