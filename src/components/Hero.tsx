@@ -32,9 +32,9 @@ const Hero = () => {
   return (
     <section className="nav-height relative w-full bg-black">
       <div className="flex-center h-5/6 w-full flex-col">
-        <p id="hero" className="hero-title">
-          iPhone 15 Pro
-        </p>
+        <h1 id="hero" className="hero-title">
+          iPhone 16 Pro
+        </h1>
 
         <div className="w-9/12 md:w-10/12">
           <video
@@ -56,7 +56,7 @@ const Hero = () => {
         <a href="#highlights" className="btn">
           Buy
         </a>
-        <p className="text-xl font-normal">From $199/month or $999</p>
+        <p className="text-xl font-normal">From ₱1,999/month or ₱54,999</p>
       </div>
     </section>
   );

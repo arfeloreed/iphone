@@ -37,9 +37,9 @@ const Features = () => {
     <section className="common-padding relative h-full overflow-hidden bg-zinc">
       <div className="screen-max-wdith">
         <div className="mb-12 w-full">
-          <h1 id="features_title" className="section-heading">
+          <h2 id="features_title" className="section-heading">
             Explore the full story.
-          </h1>
+          </h2>
         </div>
 
         <div className="flex flex-col items-center justify-center overflow-hidden">
@@ -86,7 +86,7 @@ const Features = () => {
               <div className="feature-text-container">
                 <div className="flex-center flex-1">
                   <p className="feature-text g_text">
-                    iPhone 15 Pro is{" "}
+                    iPhone 16 Pro is{" "}
                     <span className="text-white">
                       the first iPhone to feature an aerospace-grade titanium
                       design

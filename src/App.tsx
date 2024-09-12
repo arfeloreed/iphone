@@ -5,6 +5,7 @@ import Model from "./components/Model";
 import Features from "./components/Features";
 import HowItWorks from "./components/HowItWorks";
 import Footer from "./components/Footer";
+import ScrollToTopBtn from "./components/ScrollToTopBtn";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Features />
       <HowItWorks />
       <Footer />
+      <ScrollToTopBtn />
     </main>
   );
 };
